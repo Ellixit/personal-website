@@ -1,0 +1,14 @@
+# Ignore node modules
+node_modules/
+
+# Ignore dependency lockfiles
+package-lock.json
+yarn.lock
+
+# Ignore environment variables
+.env
+
+# Ignore build outputs (if any)
+dist/
+out/
+.cache/
