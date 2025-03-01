@@ -33,13 +33,14 @@ dd {
 }
 
 #about {
+    scroll-margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 60%;
-    scroll-margin-top: 50px;
 }
 #experience, #projects {
+    scroll-margin-top: 50px;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
