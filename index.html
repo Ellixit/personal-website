@@ -9,14 +9,13 @@
 
 <body>
     <div class="banner">
-        <a class="banner-button" href="#about"> About </a>
-        <a class="banner-button" href="#experience"> Experience </a>
-        <!-- <a class="banner-button" href="#education"> Education </a> -->
-        <a class="banner-button" href="#projects"> Projects </a>
+        <a class="banner-button" href="#about" onclick="scrollToSection(event, 'about')"> About </a>
+        <a class="banner-button" href="#experience" onclick="scrollToSection(event, 'experience')"> Experience </a>
+        <a class="banner-button" href="#projects" onclick="scrollToSection(event, 'projects')"> Projects </a>
     </div>
     <div class="main-container">
         <div id="about">
-            <img src="meow.png" alt="Portrait" class="portrait">
+            <img src="resources/meow.png" alt="Portrait" class="portrait">
             <h2 class="portrait-header"> Jeffrey Xiao </h2>
             <p>
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/> 
@@ -69,6 +68,7 @@
         <div id="projects">
             <h2> Projects </h2>
             <dl>
+                <img src="resources/map.svg" alt="Map Icon" width="80" height="80">
                 <dt class="position-title"> Redistricting Data Viewer </dt>
                     <dd class="project-description"> Visualize and interact with economic, electoral, and racial demographic information. Develop insights into how various factors shape voting patterns. </dd>
                 <dt class="position-title"> Study Buddy </dt>
@@ -82,6 +82,19 @@
             </dl>
         </div>
     </div>
+
+    <script>
+        function scrollToSection(event, sectionId) {
+            event.preventDefault();
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
+                // Remove the hash from the URL without refreshing the page
+                history.replaceState(null, '', window.location.pathname);
+            }
+        }
+    </script>
+
 </body>
 
 </html>
