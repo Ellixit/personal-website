@@ -16,7 +16,13 @@
     <div class="main-container">
         <div id="about">
             <img src="resources/meow.png" alt="Portrait" class="portrait">
-            <h2 class="portrait-header"> Jeffrey Xiao </h2>
+            <h2> Jeffrey Xiao </h2>
+            <div class="icon-container">
+                <img src="resources/mail.svg" alt="Mail Icon" class="icon" id="email-button" onclick="copyEmail()">
+                <a href="https://www.linkedin.com/in/jeffreyqxiao/" target="_blank"> <img src="resources/linkedin.svg" alt="LinkedIn Icon" class="icon"> </a>
+                <a href="https://github.com/Ellixit" target="_blank"> <img src="resources/github.svg" alt="Github Icon" class="icon"> </a>
+                <a href="https://www.flickr.com/photos/199442374@N07/" target="_blank"> <img src="resources/aperture.svg" alt="Camera Icon" class="icon"> </a>
+            </div>
             <p>
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/> 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br/> 
@@ -67,19 +73,37 @@
         </div>
         <div id="projects">
             <h2> Projects </h2>
-            <dl>
-                <img src="resources/map.svg" alt="Map Icon" width="80" height="80">
-                <dt class="position-title"> Redistricting Data Viewer </dt>
-                    <dd class="project-description"> Visualize and interact with economic, electoral, and racial demographic information. Develop insights into how various factors shape voting patterns. </dd>
-                <dt class="position-title"> Study Buddy </dt>
-                    <dd class="project-description"> Transform education with Study Buddy! Pick a default course or upload your own course material for limitless personalized practice problems. Master any subject in minutes! </dd>
-                <dt class="position-title"> Password Vault </dt>
-                    <dd class="project-description"> Secure Password Vault Manager: A Python-based CLI tool for managing encrypted password vaults. Features include password generation, lookup, update, and deletion, secured using AES-GCM encryption and scrypt-based key derivation. </dd>
-                <dt class="position-title"> Dynamic Memory Allocator </dt>
-                    <dd class="project-description"> Dynamic memory allocator that manages heap memory at runtime. Provides base functionality to allocate, reallocate, and free memory given an input byte size. </dd>
-                <dt class="position-title"> OML Calculator </dt>
-                    <dd class="project-description"> Rudimentary program that calculates current OMS points based on criteria outlined in USACC Circular 601-24-1. Uses Python and implements basic command-line interface. </dd>
-            </dl>
+
+            <div class="project-title">
+                <img src="resources/map.svg" alt="Map Icon" class="icon">
+                <a class="position-title" href="https://redistricting-data-viewer.pages.dev/" target="_blank"> Redistricting Data Viewer </a>
+            </div>
+            <div class="project-description"> Visualize and interact with economic, electoral, and racial demographic information. Develop insights into how various factors shape voting patterns. </div>
+
+            <div class="project-title">
+                <img src="resources/book-open.svg" alt="Book-Open Icon" class="icon">
+                <a class="position-title" href="https://devpost.com/software/study-buddy-course-study-material-generator" target="_blank"> Study Buddy </a>
+            </div>
+            <div class="project-description"> Transform education with Study Buddy! Pick a default course or upload your own course material for limitless personalized practice problems. Master any subject in minutes! </div>
+
+            <div class="project-title">
+                <img src="resources/lock.svg" alt="Lock Icon" class="icon">
+                <a class="position-title" href="https://github.com/Ellixit/password-vault" target="_blank"> Password Vault </a>
+            </div>
+            <div class="project-description"> Secure Password Vault Manager: A Python-based CLI tool for managing encrypted password vaults. Features include password generation, lookup, update, and deletion, secured using AES-GCM encryption and scrypt-based key derivation. </div>
+
+            <div class="project-title">
+                <img src="resources/cpu.svg" alt="CPU Icon" class="icon">
+                <a class="position-title" href="https://github.com/Ellixit/dynamic-memory-allocator" target="_blank"> Dynamic Memory Allocator </a>
+            </div>
+            <div class="project-description"> Dynamic memory allocator that manages heap memory at runtime. Provides base functionality to allocate, reallocate, and free memory given an input byte size. </div>
+
+            <div class="project-title">
+                <img src="resources/file-text.svg" alt="File-Text Icon" class="icon">
+                <a class="position-title" href="https://github.com/Ellixit/oml-calculator" target="_blank"> OML Calculator </a>
+            </div>
+            <div class="project-description"> Rudimentary program that calculates current OMS points based on criteria outlined in USACC Circular 601-24-1. Uses Python and implements basic command-line interface. </div>
+
         </div>
     </div>
 
@@ -88,10 +112,14 @@
             event.preventDefault();
             const element = document.getElementById(sectionId);
             if (element) {
-                element.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the element
-                // Remove the hash from the URL without refreshing the page
+                element.scrollIntoView({ behavior: 'smooth' });
                 history.replaceState(null, '', window.location.pathname);
             }
+        }
+
+        function copyEmail() {
+            const email = 'jeffrey.xiao03@gmail.com';
+            navigator.clipboard.writeText(email);
         }
     </script>
 
