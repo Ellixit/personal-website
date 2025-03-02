@@ -1,6 +1,3 @@
-section {
-    scroll-margin-top: 80px;
-}
 body {
     font-size: 16px;
     margin: 0px 0px 50px 0px;
@@ -44,8 +41,8 @@ dd {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 60%;
 }
 #education-container {
@@ -55,6 +52,18 @@ dd {
 }
 #education, #certifications {
     width: 45%;
+}
+
+@media (max-width: 768px) {
+    #about, #experience, #projects, #education-container, #education, #certifications {
+        width: 90%;
+        border: 2px solid red; /* Debugging border */
+    }
+
+    #education-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .banner {
@@ -71,8 +80,8 @@ dd {
 .banner-button {
     margin: 0px 20px 0px 0px;
     color: white;
+    font-size: 1.25em;
     text-decoration: none;
-    font-size: 20px;
 }
 .banner-button:hover {
     cursor: pointer;
