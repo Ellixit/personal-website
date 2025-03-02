@@ -19,7 +19,7 @@ h2 {
 h3 {
     margin: 10px 0px;
     color: rgb(32, 121, 200);
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
 }
@@ -33,15 +33,15 @@ dd {
 }
 
 #about {
-    scroll-margin-top: 50px;
+    scroll-margin-top: 54px;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 60%;
 }
 #experience, #projects {
-    scroll-margin-top: 50px;
-    margin-top: 100px;
+    scroll-margin-top: 54px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -72,7 +72,7 @@ dd {
     margin: 0px 20px 0px 0px;
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 .banner-button:hover {
     cursor: pointer;
