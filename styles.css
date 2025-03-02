@@ -1,25 +1,24 @@
 body {
-    font-size: 16px;
     margin: 0px 0px 50px 0px;
     font-family: "Montserrat", system-ui;
 }
 h2 {
     margin: 20px 0px;
-    color: rgb(32, 121, 200);
-    font-size: 32px;
+    color: 0F4C75;
     font-weight: bold;
     text-align: center;
 }
 h3 {
     margin: 10px 0px;
-    color: rgb(32, 121, 200);
-    font-size: 26px;
+    color: #3282B8;
     font-weight: bold;
     text-align: center;
 }
 p {
     color: rgb(50, 50, 50);
-    font-size: 16px;
+}
+dl {
+    margin-top: 0px;
 }
 dd {
     margin: 10px 0px 10px 40px;
@@ -38,7 +37,7 @@ dd {
 }
 #experience, #projects {
     scroll-margin-top: 54px;
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -67,16 +66,24 @@ dd {
 .banner {
     position: sticky;
     top: 0;
-    background-color: rgb(32, 121, 200);
+    background-color: #0F4C75;
     margin: 0px;
-    padding: 15px 0px;
+    padding: 7px 0px;
     text-align: center;
     display: flex;
     justify-content: right;
     align-items: center;
 }
+.favicon {
+    height: 40px;
+    margin-left: 10px;
+}
+.banner-buttons {
+    margin-left: auto;
+    display: flex;
+}
 .banner-button {
-    margin: 0px 20px 0px 0px;
+    margin-right: 2.5vw;
     color: white;
     font-size: 1.25em;
     text-decoration: none;
@@ -91,21 +98,42 @@ dd {
     align-items: center;
 }
 .portrait {
+    margin-top: 30px;
     align-items: center;
-    width: 300px;
+    width: 30%;
+}
+.notification {
+    visibility: hidden;
+    background-color: #3282B8;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    font-size: 0.9em;
+    top: -30px;
+    left: -30%;
+    transition: visibility 0s, opacity 0.3s ease;
+    opacity: 0;
+}
+.notification.show {
+    visibility: visible;
+    opacity: 1;
 }
 .icon-container {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 20px
 }
 .position-title {
-    color: rgb(32, 121, 200);
+    color: #3282B8;
     font-weight: bold;
 }
 .position-info {
     color: rgb(120, 120, 120);
-    font-size: 12px;
+    font-size: 0.9em;
     font-weight: bold;
     font-style: italic;
 }
@@ -122,7 +150,6 @@ dd {
     gap: 10px;
 }
 .project-description {
-    font-size: 16px;
     margin: 0px 0px 20px 40px;
     line-height: 1.5;
 }
