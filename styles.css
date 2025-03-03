@@ -25,6 +25,14 @@ dd {
     line-height: 1.75;
 }
 
+#checkbtn {
+    display: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+#check:checked ~ .nav-mobile {
+    display: block;
+}
 #email-button:hover {
     cursor: pointer;
 }
@@ -57,19 +65,6 @@ dd {
     font-size: 12px;
 }
 
-@media (max-width: 768px) {
-    #about, #experience, #projects, #skills, #education-container {
-        width: 90%;
-    }
-    #skills-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .skills-column {
-        width: 80%;
-    }
-}
-
 .banner {
     position: sticky;
     top: 0;
@@ -85,7 +80,22 @@ dd {
     height: 40px;
     margin-left: 10px;
 }
-.banner-buttons {
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 54px;
+    right: 0;
+    background: #0F4C75;
+    width: 15vw;
+    min-width: 120px;
+    padding-top: 5px;
+}
+.nav-mobile a {
+    color: white;
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+.banner-spacing {
     margin-left: auto;
     display: flex;
 }
@@ -171,5 +181,24 @@ dd {
     text-align: center;
 }
 .skills-list {
-    margin: 10px;
+    margin: 8px;
+}
+
+@media (max-width: 768px) {
+    #about, #experience, #projects, #skills, #education-container {
+        width: 90%;
+    }
+    #skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-column {
+        width: 100%;
+    }
+    #checkbtn {
+        display: block;
+    }
+    #banner-buttons {
+        display: none;
+    }
 }
