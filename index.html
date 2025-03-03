@@ -15,6 +15,7 @@
             <a class="banner-button" href="#about" onclick="scrollToSection(event, 'about')"> About </a>
             <a class="banner-button" href="#experience" onclick="scrollToSection(event, 'experience')"> Experience </a>
             <a class="banner-button" href="#projects" onclick="scrollToSection(event, 'projects')"> Projects </a>
+            <a class="banner-button" href="#skills" onclick="scrollToSection(event, 'skills')"> Skills </a>
         </div>
     </div>
 
@@ -29,10 +30,18 @@
                 <a href="https://github.com/Ellixit" target="_blank"> <img src="resources/github.svg" alt="Github Icon" class="icon"> </a>
                 <a href="https://www.flickr.com/photos/199442374@N07/" target="_blank"> <img src="resources/aperture.svg" alt="Camera Icon" class="icon"> </a>
             </div>
-            <p>
+            <p class="about-me">
                 Hi! My name is Jeffrey, and I'm a full-time student at Stony Brook University studying computer science. 
                 I'm also a member of the Army Reserve Officers' Training Corps and will commission as a Second Lieutenant into the United States Army Cyber Corps in May 2025.
             </p>
+            <p class="todo-list"> My Top To-do Right Now: </p>
+            <ul class="todo-item">
+                <li> Graduate from university </li>
+                <li> Finish setting up my homelab </li>
+                <li> Add a photography subpage to this site </li>
+                <li> Earn CompTIA Network+ </li>
+                <li> Finish the 46 High Peaks </li>
+            </ul>
         </div>
 
         <div id="experience">
@@ -59,25 +68,6 @@
             </dl>
         </div>
 
-        <div id="education-container">
-            <div id="education">
-                <h3> Coursework </h3>
-                <p class="certification-list"> • Analysis of Algorithms </p>
-                <p class="certification-list"> • Computer Networks </p>
-                <p class="certification-list"> • Engineering Graphics and CAD </p>
-                <p class="certification-list"> • Offensive Security </p>
-                <p class="certification-list"> • Software Engineering </p>
-                <p class="certification-list"> • Web Security </p>
-            </div>
-            <div id="certifications">
-                <h3> Certifications </h3>
-                <p class="certification-list"> • CompTIA Security+ </p>
-                <p class="certification-list"> • CompTIA A+ </p>
-                <p class="certification-list"> • CompTIA ITF+ </p>
-                <p class="certification-list"> • Google IT Support Certificate </p>
-            </div>
-        </div>
-
         <div id="projects">
             <h2> Projects </h2>
             <div class="project-title">
@@ -102,15 +92,55 @@
                 <img src="resources/cpu.svg" alt="CPU Icon" class="icon">
                 <a class="position-title" href="https://github.com/Ellixit/dynamic-memory-allocator" target="_blank"> Dynamic Memory Allocator🔗 </a>
             </div>
-            <div class="project-description"> Dynamic memory allocator that manages heap memory at runtime. Provides base functionality to allocate, reallocate, and free memory given an input byte size. </div>
+            <div class="project-description"> Dynamic memory allocator that manages heap memory at runtime. Provides functionality to allocate, reallocate, and free memory similar to malloc, realloc, and free methods in C. </div>
 
             <div class="project-title">
                 <img src="resources/file-text.svg" alt="File-Text Icon" class="icon">
                 <a class="position-title" href="https://github.com/Ellixit/oml-calculator" target="_blank"> OML Calculator🔗 </a>
             </div>
-            <div class="project-description"> Rudimentary program that calculates current OMS points based on criteria outlined in USACC Circular 601-24-1. Uses Python and implements basic command-line interface. </div>
-
+            <div class="project-description"> Calculates current OMS points based on criteria outlined in USACC Circular 601-24-1. Written in Python and utilizes a basic command-line interface. </div>
         </div>
+
+        <div id="skills">
+            <h2> Skills </h2>
+            <div id="skills-container">
+                <div class="skills-column">
+                    <h3> Languages </h3>
+                    <p class="skills-list"> C </p>
+                    <p class="skills-list"> CSS </p>
+                    <p class="skills-list"> HTML </p>
+                    <p class="skills-list"> Java </p>
+                    <p class="skills-list"> JavaScript </p>
+                    <p class="skills-list"> Python </p>
+                    <p class="skills-list"> R </p>
+                    <p class="skills-list"> Ruby </p>
+                    <p class="skills-list"> SQL </p>
+                </div>
+                <div class="skills-column">
+                    <h3> Tools </h3>
+                    <p class="skills-list"> Active Directory </p>
+                    <p class="skills-list"> D3.js </p>
+                    <p class="skills-list"> Docker </p>
+                    <p class="skills-list"> Fusion360 </p>
+                    <p class="skills-list"> Git </p>
+                    <p class="skills-list"> MongoDB </p>
+                    <p class="skills-list"> MySQL </p>
+                    <p class="skills-list"> Node.js </p>
+                    <p class="skills-list"> React </p>
+                    <p class="skills-list"> Wireshark </p>
+                    <p class="skills-list"> Zabbix </p>
+
+                </div>
+                <div class="skills-column">
+                    <h3> Certifications </h3>
+                    <p class="skills-list"> CompTIA Security+ </p>
+                    <p class="skills-list"> CompTIA A+ </p>
+                    <p class="skills-list"> CompTIA ITF+ </p>
+                    <p class="skills-list"> Google IT Support Certificate </p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script>
@@ -137,5 +167,9 @@
     </script>
 
 </body>
+
+<footer>
+    <p id="footer-attribution"> © Jeffrey Xiao • 2025 </p>
+</footer>
 
 </html>

@@ -1,5 +1,5 @@
 body {
-    margin: 0px 0px 50px 0px;
+    margin: 0px 0px 10px 0px;
     font-family: "Montserrat", system-ui;
 }
 h2 {
@@ -14,7 +14,7 @@ h3 {
     font-weight: bold;
     text-align: center;
 }
-p {
+p, li {
     color: rgb(50, 50, 50);
 }
 dl {
@@ -28,8 +28,9 @@ dd {
 #email-button:hover {
     cursor: pointer;
 }
-#about {
+#about, #skills {
     scroll-margin-top: 54px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,31 +38,34 @@ dd {
 }
 #experience, #projects {
     scroll-margin-top: 54px;
-    margin-top: 40px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     width: 60%;
 }
-#education-container {
+#skills-container {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 80%;
+    gap: 25px;
 }
-#education, #certifications {
-    width: 45%;
+#footer-attribution {
+    text-align: center;
+    margin: 0px;
+    font-size: 12px;
 }
 
 @media (max-width: 768px) {
-    #about, #experience, #projects, #education-container {
+    #about, #experience, #projects, #skills, #education-container {
         width: 90%;
     }
-    #education-container {
+    #skills-container {
         flex-direction: column;
         align-items: center;
     }
-    #education, #certifications {
+    .skills-column {
         width: 80%;
     }
 }
@@ -86,9 +90,9 @@ dd {
     display: flex;
 }
 .banner-button {
-    margin-right: 2.5vw;
+    margin-right: 2vw;
     color: white;
-    font-size: 1.25em;
+    font-size: 1.15em;
     text-decoration: none;
 }
 .banner-button:hover {
@@ -106,17 +110,26 @@ dd {
     width: 25vw;
     max-width: 200px;
 }
+.about-me {
+    max-width: 75%;
+}
+.todo-list {
+    margin: 0px;
+}
+.todo-item {
+    line-height: 1.5;
+}
 .notification {
     visibility: hidden;
     background-color: #3282B8;
     color: white;
     text-align: center;
     border-radius: 10px;
-    padding: 5px;
+    padding: 6px;
     position: absolute;
     z-index: 1;
     font-size: 0.9em;
-    top: -30px;
+    top: -35px;
     left: -30%;
     transition: visibility 0s, opacity 0.3s ease;
     opacity: 0;
@@ -128,7 +141,6 @@ dd {
 .icon-container {
     position: relative;
     display: flex;
-    align-items: center;
     gap: 20px
 }
 .position-title {
@@ -140,9 +152,6 @@ dd {
     font-size: 0.9em;
     font-weight: bold;
     font-style: italic;
-}
-.certification-list {
-    margin: 5px;
 }
 .icon {
     width: 24px;
@@ -156,4 +165,11 @@ dd {
 .project-description {
     margin: 0px 0px 20px 40px;
     line-height: 1.5;
+}
+.skills-column {
+    flex: 1;
+    text-align: center;
+}
+.skills-list {
+    margin: 10px;
 }
