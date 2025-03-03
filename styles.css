@@ -30,7 +30,7 @@ dd {
     cursor: pointer;
     margin-right: 15px;
 }
-#check:checked ~ .nav-mobile {
+#menu-check:checked ~ .nav-mobile {
     display: block;
 }
 #email-button:hover {
