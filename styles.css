@@ -212,7 +212,6 @@ dd {
         gap: 20px;
         justify-content: center;
     }
-
     .skills-column {
         width: 45%;
     }
@@ -222,8 +221,9 @@ dd {
         width: 90%;
     }
     #skills-container {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
     }
     #backpacking-container {
         padding: 20px 10% 50px;
