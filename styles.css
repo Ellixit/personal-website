@@ -43,7 +43,7 @@ dd {
 }
 #about, #skills {
     scroll-margin-top: 54px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +51,7 @@ dd {
 }
 #experience, #projects {
     scroll-margin-top: 54px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -205,7 +205,7 @@ dd {
 
 #backpacking-container {
     display: none;
-    padding: 20px 10%;
+    padding: 20px 10% 30px;
 }
 
 .gearlist-table {
