@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <div class="main-container">
+    <div id="main-container">
         <div id="about">
             <img src="resources/portrait.png" alt="portrait" class="portrait">
             <h2> Jeffrey Xiao </h2>
@@ -40,6 +40,7 @@
                 <a href="https://www.linkedin.com/in/jeffreyqxiao/" target="_blank"> <img src="resources/linkedin.svg" alt="LinkedIn Icon" class="icon"> </a>
                 <a href="https://github.com/Ellixit" target="_blank"> <img src="resources/github.svg" alt="Github Icon" class="icon"> </a>
                 <a href="https://www.flickr.com/photos/199442374@N07/" target="_blank"> <img src="resources/aperture.svg" alt="Camera Icon" class="icon"> </a>
+                <a href="#" onclick="showBackpackingPage(); return false;"> <img src="resources/mountain.svg" alt="Mountain Icon" class="icon"> </a>
             </div>
             <p class="about-me">
                 Hi! My name is Jeffrey, and I'm a full-time student at Stony Brook University studying computer science. 
@@ -48,7 +49,6 @@
             <p class="todo-list"> My Top To-do Right Now: </p>
             <ul class="todo-item">
                 <li> Graduate from university </li>
-                <li> Set up homelab VPN and NAS </li>
                 <li> Add a photography subpage to website </li>
                 <li> Earn CompTIA Network+ </li>
                 <li> Finish the 46 High Peaks </li>
@@ -150,31 +150,13 @@
                 </div>
             </div>
         </div>
-
     </div>
 
-    <script>
-        function scrollToSection(event, sectionId) {
-            event.preventDefault();
-            const element = document.getElementById(sectionId);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-                history.replaceState(null, '', window.location.pathname);
-            }
-        }
+    <div id="backpacking-container">
+        <h2> Backpacking Gear List! </h2>
+    </div>
 
-        function copyEmail() {
-            const email = 'jeffrey.xiao03@gmail.com';
-            navigator.clipboard.writeText(email);
-
-            const notification = document.getElementById('email-notification');
-            notification.classList.add('show');
-
-            setTimeout(() => {
-                notification.classList.remove('show');
-            }, 2000);
-        }
-    </script>
+    <script src="script.js" defer></script>
 
 </body>
 

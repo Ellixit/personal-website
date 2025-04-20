@@ -36,6 +36,11 @@ dd {
 #email-button:hover {
     cursor: pointer;
 }
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #about, #skills {
     scroll-margin-top: 54px;
     margin-bottom: 50px;
@@ -108,11 +113,6 @@ dd {
 .banner-button:hover {
     cursor: pointer;
     text-decoration: underline;
-}
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .portrait {
     margin-top: 30px;
@@ -201,4 +201,25 @@ dd {
     #banner-buttons {
         display: none;
     }
+}
+
+#backpacking-container {
+    display: none;
+    padding: 20px 60px;
+}
+
+.gearlist-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.gearlist-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+.gearlist-table th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    color: #0F4C75;
 }
