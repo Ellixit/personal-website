@@ -22,7 +22,7 @@ dl {
 }
 dd {
     margin: 10px 0px 10px 40px;
-    line-height: 1.75;
+    line-height: 1.5;
 }
 
 #checkbtn {
@@ -180,7 +180,7 @@ dd {
     gap: 10px;
 }
 .project-description {
-    margin: 0px 0px 20px 40px;
+    margin: 0px 0px 20px 33px;
     line-height: 1.5;
 }
 .skills-column {
