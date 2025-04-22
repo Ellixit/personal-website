@@ -1,5 +1,6 @@
 html {
     -webkit-text-size-adjust: none;
+    overflow: hidden;
 }
 body {
     margin: 0px 0px 10px 0px;
@@ -81,16 +82,19 @@ dd {
 }
 
 .banner {
+    width: 100vw;
     position: sticky;
     top: 0;
     background-color: #0F4C75;
-    margin: 0px;
+    margin: 0;
     padding: 7px 0px;
     text-align: center;
     display: flex;
     justify-content: right;
     align-items: center;
+    box-sizing: border-box;
 }
+
 .favicon {
     height: 40px;
     margin-left: 10px;
@@ -168,9 +172,10 @@ dd {
     font-weight: bold;
 }
 .position-info {
-    color: rgb(120, 120, 120);
+    padding-top: 3px;
+    color: rgb(40, 40, 40);
     font-size: 0.9em;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-style: italic;
 }
 .icon {
@@ -184,7 +189,7 @@ dd {
 }
 .project-description {
     margin: 0px 0px 20px 33px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 .skills-column {
     flex: 1;
