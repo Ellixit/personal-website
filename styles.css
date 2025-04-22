@@ -226,12 +226,26 @@ dd {
         gap: 20px;
     }
     #backpacking-container {
-        padding: 20px 10% 50px;
+        padding: 20px 8% 50px;
     }
     #checkbtn {
         display: block;
     }
     #banner-buttons {
         display: none;
+    }
+}
+@media screen and (orientation: landscape) and (max-device-width: 768px) {
+    #about, #experience, #projects, #skills, #education-container {
+        width: 90%;
+    }
+    .project-description {
+        font-size: 0.95em;
+    }
+    .position-info {
+        font-size: 0.85em;
+    }
+    .position-title {
+        font-size: 1em;
     }
 }
