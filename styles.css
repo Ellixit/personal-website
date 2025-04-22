@@ -216,7 +216,7 @@ dd {
         width: 45%;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-height: 375px) {
     #about, #experience, #projects, #skills, #education-container {
         width: 90%;
     }
@@ -233,19 +233,5 @@ dd {
     }
     #banner-buttons {
         display: none;
-    }
-}
-@media screen and (orientation: landscape) and (max-device-width: 768px) {
-    #about, #experience, #projects, #skills, #education-container {
-        width: 90%;
-    }
-    .project-description {
-        font-size: 0.95em;
-    }
-    .position-info {
-        font-size: 0.85em;
-    }
-    .position-title {
-        font-size: 1em;
     }
 }
