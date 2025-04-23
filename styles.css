@@ -5,17 +5,15 @@ body {
     margin: 0px 0px 10px 0px;
     font-family: "Montserrat", system-ui;
 }
-h2 {
+h2, h3 {
     margin: 20px 0px;
     color: 0F4C75;
     font-weight: bold;
     text-align: center;
 }
 h3 {
-    margin: 10px 0px;
+    margin: 5px 0px;
     color: #3282B8;
-    font-weight: bold;
-    text-align: center;
 }
 p, li {
     color: rgb(50, 50, 50);
@@ -75,6 +73,8 @@ dd {
     margin: 50px 0px 0px 0px;
     font-size: 12px;
 }
+
+/* Navigation */
 .banner {
     position: sticky;
     top: 0;
@@ -90,7 +90,6 @@ dd {
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
 }
-
 .favicon {
     height: 40px;
     margin-left: 10px;
@@ -124,6 +123,8 @@ dd {
     cursor: pointer;
     text-decoration: underline;
 }
+
+/* About Section */
 .portrait {
     margin-top: 30px;
     align-items: center;
@@ -138,6 +139,11 @@ dd {
 }
 .todo-item {
     line-height: 1.5;
+}
+.icon-container {
+    position: relative;
+    display: flex;
+    gap: 20px
 }
 .notification {
     visibility: hidden;
@@ -158,29 +164,24 @@ dd {
     visibility: visible;
     opacity: 1;
 }
-.icon-container {
-    position: relative;
-    display: flex;
-    gap: 20px
-}
-.position-title, .education-title {
+
+/* Experience Section */
+.position-title{
     color: #3282B8;
     font-weight: bold;
 }
-.position-info, .education-info {
+.position-info {
     padding-top: 3px;
-    color: rgb(40, 40, 40);
+    color: #0F4C75;
     font-size: 0.9em;
     font-style: italic;
 }
 .poster {
     text-decoration: none;
-    color: black;
+    color: rgb(50, 50, 50);
 }
-.education-items {
-    text-align: center;
-    line-height: 8px;
-}
+
+/* Projects Section */
 .icon {
     width: 24px;
     height: 24px;
@@ -192,8 +193,27 @@ dd {
 }
 .project-description {
     margin: 0px 0px 20px 33px;
-    line-height: 1.6;
 }
+
+/* Education Section */
+.education-container {
+    text-align: center;
+}
+.education-title {
+    color: #3282B8;
+    font-weight: bold;
+    margin: 5px;
+}
+.education-info {
+    color: #0F4C75;
+    font-style: italic;
+    margin-top: 5px;
+}
+.education-item {
+    margin: 8px 0px;
+}
+
+/* Skills Section */
 .skills-column {
     flex: 1;
     text-align: center;
@@ -201,6 +221,8 @@ dd {
 .skills-list {
     margin: 8px;
 }
+
+/* Gear Table */
 .gearlist-table {
     border-collapse: collapse;
     width: 100%;
@@ -217,6 +239,8 @@ dd {
     text-align: center;
     color: #ffffff;
 }
+
+/* Mobile-Responsive */
 @media (max-width: 1100px) {
     #skills-container {
         flex-wrap: wrap;
