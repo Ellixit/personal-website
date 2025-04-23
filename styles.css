@@ -83,7 +83,6 @@ dd {
 }
 
 .banner {
-    width: 100vw;
     position: sticky;
     top: 0;
     background-color: #0F4C75;
@@ -123,7 +122,7 @@ dd {
     display: flex;
 }
 .banner-button {
-    margin-right: 2vw;
+    margin-right: 1.25vw;
     color: white;
     font-size: 1.15em;
     text-decoration: none;
