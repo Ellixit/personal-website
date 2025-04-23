@@ -226,7 +226,7 @@ dd {
         width: 45%;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-height: 375px)  {
     #about, #experience, #projects, #skills, #education-container {
         width: 90%;
     }
