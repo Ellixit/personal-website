@@ -53,10 +53,10 @@ dd {
     flex-direction: column;
     width: 60%;
 }
-#about, #skills {
+#about, #skills, #education {
     align-items: center;
 }
-#experience, #education, #projects {
+#experience, #projects {
     justify-content: flex-start;
     align-items: flex-start;
 }
@@ -163,11 +163,11 @@ dd {
     display: flex;
     gap: 20px
 }
-.position-title {
+.position-title, .education-title {
     color: #3282B8;
     font-weight: bold;
 }
-.position-info {
+.position-info, .education-info {
     padding-top: 3px;
     color: rgb(40, 40, 40);
     font-size: 0.9em;
@@ -176,6 +176,10 @@ dd {
 .poster {
     text-decoration: none;
     color: black;
+}
+.education-items {
+    text-align: center;
+    line-height: 15px;
 }
 .icon {
     width: 24px;
