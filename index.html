@@ -15,6 +15,7 @@
             <div id="banner-buttons">
                 <a class="banner-button" href="#about" onclick="scrollToSection(event, 'about')"> About </a>
                 <a class="banner-button" href="#experience" onclick="scrollToSection(event, 'experience')"> Experience </a>
+                <a class="banner-button" href="#education" onclick="scrollToSection(event, 'education')"> Education </a>
                 <a class="banner-button" href="#projects" onclick="scrollToSection(event, 'projects')"> Projects </a>
                 <a class="banner-button" href="#skills" onclick="scrollToSection(event, 'skills')"> Skills </a>
             </div>
@@ -24,6 +25,7 @@
             <div class="nav-mobile w3-animate-right">
                 <a class="banner-button" href="#about" onclick="scrollToSection(event, 'about')"> About </a>
                 <a class="banner-button" href="#experience" onclick="scrollToSection(event, 'experience')"> Experience </a>
+                <a class="banner-button" href="#education" onclick="scrollToSection(event, 'education')"> Education </a>
                 <a class="banner-button" href="#projects" onclick="scrollToSection(event, 'projects')"> Projects </a>
                 <a class="banner-button" href="#skills" onclick="scrollToSection(event, 'skills')"> Skills </a>
             </div>
@@ -31,7 +33,7 @@
     </div>
 
     <div id="main-container">
-        <div id="about">
+        <div class="info-section" id="about">
             <img src="resources/portrait.png" alt="portrait" class="portrait">
             <h2> Jeffrey Xiao </h2>
             <div class="icon-container">
@@ -55,7 +57,7 @@
             </ul>
         </div>
 
-        <div id="experience">
+        <div class="info-section" id="experience">
             <h2> Experience </h2>
             <dl>
                 <dt class="position-title"> Information Technology Support Specialist </dt>
@@ -83,7 +85,24 @@
             </dl>
         </div>
 
-        <div id="projects">
+        <div class="info-section" id="education">
+            <h2> Education </h2>
+            <dl>
+                <dt class="position-title"> Bachelor of Science in Computer Science, Honors </dt>
+                <dt class="position-info"> Stony Brook University • Expected May 2025 </dt>
+                    <dd> • Summa Cum Laude </dd>
+                    <dd> • Honors College </dd>
+                    <dd> • Computer Science Honors Program </dd>
+                    <dd> • Phi Beta Kappa </dd>
+                <dt class="position-title"> Advanced Regents Diploma with Mastery in Science and Mathematics </dt>
+                <dt class="position-info"> Canajoharie Senior High School • June 2021 </dt>
+                    <dd> • Valedictorian </dd>
+                    <dd> • AP Scholar with Distinction </dd>
+                    <dd> • College Board National Rural and Small Town Recognition Award </dd>
+            </dl>
+        </div>
+
+        <div class="info-section" id="projects">
             <h2> Projects </h2>
             <div class="project-title">
                 <img src="resources/map.svg" alt="Map Icon" class="icon">
@@ -132,7 +151,7 @@
             </p>
         </div>
 
-        <div id="skills">
+        <div class="info-section" id="skills">
             <h2> Skills </h2>
             <div id="skills-container">
                 <div class="skills-column">
@@ -179,6 +198,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
 
     <div id="backpacking-container">

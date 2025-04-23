@@ -46,25 +46,19 @@ dd {
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
 }
-#about, #skills {
+.info-section {
     scroll-margin-top: 54px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 60%;
 }
-#skills {
-    margin-bottom: 50px;
+#about, #skills {
+    align-items: center;
 }
-#experience, #projects {
-    scroll-margin-top: 54px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+#experience, #education, #projects {
     justify-content: flex-start;
     align-items: flex-start;
-    width: 60%;
 }
 #skills-container {
     display: flex;
@@ -78,10 +72,9 @@ dd {
 }
 #footer-attribution {
     text-align: center;
-    margin: 0px;
+    margin: 50px 0px 0px 0px;
     font-size: 12px;
 }
-
 .banner {
     position: sticky;
     top: 0;
@@ -231,7 +224,7 @@ dd {
     }
 }
 @media (max-width: 775px), (max-height: 450px)  {
-    #about, #experience, #projects, #skills, #education-container {
+    .info-section {
         width: 90%;
     }
     #skills-container {
