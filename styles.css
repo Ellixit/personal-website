@@ -193,6 +193,7 @@ dd {
 }
 .project-description {
     margin: 0px 0px 20px 33px;
+    line-height: 25px;
 }
 
 /* Education Section */

@@ -1,3 +1,5 @@
+document.getElementById('year').textContent = new Date().getFullYear();
+
 function scrollToSection(event, sectionId) {
     event.preventDefault();
 
