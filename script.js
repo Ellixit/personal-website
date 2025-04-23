@@ -29,7 +29,7 @@ function showBackpackingPage() {
     container.style.display = 'block';
 
     if (!container.dataset.loaded) {
-        fetch('resources/gearlist.csv')
+        fetch('documents/gearlist.csv')
             .then(response => response.text())
             .then(data => {
                 const rows = data.trim().split('\n').map(line => line.split(','));

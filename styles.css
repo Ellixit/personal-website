@@ -178,8 +178,11 @@ dd {
     padding-top: 3px;
     color: rgb(40, 40, 40);
     font-size: 0.9em;
-    /* font-weight: bold; */
     font-style: italic;
+}
+.poster {
+    text-decoration: none;
+    color: black;
 }
 .icon {
     width: 24px;
