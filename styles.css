@@ -211,7 +211,7 @@ dd {
     margin-top: 5px;
 }
 .education-item {
-    margin: 8px 0px;
+    margin: 12px 0px;
 }
 
 /* Skills Section */
@@ -220,7 +220,7 @@ dd {
     text-align: center;
 }
 .skills-list {
-    margin: 8px;
+    margin: 10px 0px;
 }
 
 /* Gear Table */
