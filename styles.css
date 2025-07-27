@@ -220,7 +220,11 @@ dd {
     text-align: center;
 }
 .skills-list {
-    margin: 10px 0px;
+    margin: 12px 0px;
+}
+.certs {
+    text-decoration: underline;
+    color: rgb(50, 50, 50);
 }
 
 /* Gear Table */
