@@ -241,8 +241,12 @@ dd {
     text-align: left;
     margin: 25px 0px 10px 0px;
 }
-.recommendations-list, .recommendations-list li {
+.recommendations-list li {
     margin: 12px 0px;
+}
+.recommendations-list em {
+    color: #0F4C75;
+    font-weight: 500;
 }
 
 /* Gear Table */
