@@ -37,7 +37,7 @@ dd {
 #email-button:hover {
     cursor: pointer;
 }
-#main-container {
+#main-container, .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,6 +63,9 @@ dd {
     justify-content: space-between;
     width: 80%;
     gap: 25px;
+}
+#recommendations-container {
+    display: none;
 }
 #backpacking-container {
     display: none;
@@ -227,6 +230,21 @@ dd {
     color: rgb(50, 50, 50);
 }
 
+/* Recommendations */
+.recommendations-section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.recommendations-section h3 {
+    text-align: left;
+    margin: 25px 0px 10px 0px;
+}
+.recommendations-list, .recommendations-list li {
+    margin: 12px 0px;
+}
+
 /* Gear Table */
 .gearlist-table {
     border-collapse: collapse;
@@ -257,7 +275,7 @@ dd {
     }
 }
 @media (max-width: 775px), (max-height: 450px)  {
-    .info-section {
+    .info-section, .recommendations-section {
         width: 90%;
     }
     #skills-container {

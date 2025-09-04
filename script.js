@@ -5,6 +5,7 @@ function scrollToSection(event, sectionId) {
 
     document.getElementById('main-container').style.display = 'flex';
     document.getElementById('backpacking-container').style.display = 'none';
+    document.getElementById('recommendations-container').style.display = 'none';
 
     const element = document.getElementById(sectionId);
     if (element) {
@@ -23,6 +24,12 @@ function copyEmail() {
     setTimeout(() => {
         notification.classList.remove('show');
     }, 2000);
+}
+
+function showRecommendations() {
+    document.getElementById('main-container').style.display = 'none';
+    const container = document.getElementById('recommendations-container');
+    container.style.display = 'block';
 }
 
 function showBackpackingPage() {
